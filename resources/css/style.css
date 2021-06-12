@@ -91,7 +91,7 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 360px) {
   header .desktop {
     display: none;
   }
