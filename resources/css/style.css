@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  min-width: 400px;
+  min-width: 450px;
 }
 
 .main-content {
@@ -41,11 +41,6 @@ body {
   .main-content {
     top: 2.5625rem;
   }
-  
-  .button:hover {
-  background-color: #000;
-  color: #fff;
-  }
 }
 
 /* Header */
@@ -55,7 +50,7 @@ header {
   width: 100%;
   background-color: rgb(255, 255, 255);
   z-index: 100;
-  min-width: 400px;
+  min-width: 450px;
 }
 
 header .content {
@@ -160,6 +155,7 @@ header .mobile {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-width: 450px;
 }
 
 #sign-up-cta {
@@ -271,6 +267,7 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  min-width: 450px;
 }
 
 .feature {
@@ -359,6 +356,7 @@ header .mobile {
 #filters-section {
   padding: 4rem 0;
   background-color: #28374e;
+  min-width: 450px;
 }
 
 #filters-section .content {
@@ -437,6 +435,7 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  min-width: 450px;
 }
 
 #quotes-section .content {
@@ -491,6 +490,7 @@ header .mobile {
 footer {
   background-color: #625d5d;
   padding: 1.5rem 2rem;
+  min-width: 450px;
 }
 
 footer .content {
