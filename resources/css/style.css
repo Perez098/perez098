@@ -102,6 +102,7 @@ header .mobile {
   header .mobile {
     display: block;
     width: 100%;
+    min-width: 320px;
   }
 
   header .mobile .icon-f {
@@ -278,7 +279,7 @@ header .mobile {
 }
 
 #features-section .image-container img {
-  width: 90%;
+  width: 100%;
   height: 65%;
   margin: 0 auto;
 }
@@ -326,15 +327,14 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 760px){
   #features-section {
     flex-flow: column;
-    padding: 0;
   }
 
   .feature {
     margin: 0;
-    padding: 2rem 1rem 0 1rem;
+    padding: 1rem 1rem 0 1rem;
   }
 
   .feature h3 {
@@ -343,12 +343,23 @@ header .mobile {
 
   .feature h2 {
     font-size: 1.7rem;
+    padding: 0;
+  }
+
+  #features-section .image-container-content {
+    padding: 1rem;
+    margin-top: 1rem;
   }
 
   #features-section .image-container img {
-    height: 24rem;
-    width: 32rem;
+    margin: 0 1rem;
+    width: 100%;
+    margin: 0 auto;
   }
+}
+
+@media only screen and (max-width: 760px) and (orientation:landscape) {
+
 }
 
 @media only screen and (max-width: 430px)  {
@@ -361,19 +372,20 @@ header .mobile {
 /* Filters Section */
 
 #filters-section {
-  padding: 4rem 0;
+  padding: 4rem  1rem 3rem 1rem;
   background-color: #28374e;
 }
 
 #filters-section .content {
-  padding: 0 .625rem;
-  margin-bottom: 5rem;
+  padding: 0;
+  margin-bottom: 3rem;
 }
 
 #filters-section .content h2 {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  margin: 3.5rem 0 1rem 0;
 }
 
 #filters-section .content h3 {
@@ -381,13 +393,13 @@ header .mobile {
   line-height: 1.4;
   font-weight: 300;
   color: white;
-  margin-top: 1rem;
+  margin: 0 3rem 0 3rem;
 }
 
 #filters-section .images-container {
   display: flex;
   max-width: 100%;
-  padding: 0 1%;
+  padding: 0;
 }
 
 #filters-section .image-container {
@@ -399,18 +411,24 @@ header .mobile {
   width: 100%;
 }
 
+@media only screen and (max-width: 500px) {
+  #filters-section .extra {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   #filters-section {
-    margin-top: 2rem;
-    padding: 1.5rem 0 0 0;
+    padding: 0;
   }
 
   #filters-section .content {
-    margin-bottom: 1rem;
+    margin: 1rem;
+    padding: 1rem 0;
   }
 
   #filters-section .content h2 {
-    padding-bottom: .625rem;
+    margin-top: 2rem;
     font-size: 1.125rem;
     line-height: 1.3;
     font-weight: normal;
@@ -419,14 +437,13 @@ header .mobile {
   #filters-section .content h3 {
     font-size: .875rem;
     line-height: 1.4;
+    margin: 0;
   }
+}
 
-  #filters-section .images-container {
-    padding: 0;
-  }
-
-  #filters-section .extra {
-    display: none;
+@media only screen and (max-width: 1024px) and (min-width: 760px) {
+  #filters-section {
+    padding: 3.5rem 0rem 3rem;
   }
 }
 
@@ -465,6 +482,12 @@ header .mobile {
 
 #quotes-section .quote-citation {
   height: 1.875rem;
+}
+
+@media only screen and (max-width: 760px) {
+  #quotes-section .quote-citation {
+    height: 1.3rem;
+  }
 }
 
 
